@@ -1,4 +1,0 @@
-deployment:
-  image: "russelchowdhury/hello-ptc"
-  tag: "1.0.0"
-name: hello-ptc
