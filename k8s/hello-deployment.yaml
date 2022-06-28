@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-ptc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-ptc
+  template:
+    metadata:
+      labels:
+        app: hello-ptc
+    spec:
+      containers:
+      - name: hello-ptc
+        image: russelchowdhury/hello-ptc:1.0.0
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
