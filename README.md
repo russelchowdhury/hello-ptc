@@ -13,5 +13,9 @@
 ##### run the docker image
 
     docker run -d -p 8080:8080 russelchowdhury/hello-ptc:1.0.0
+
+##### Access the service here:
+
+http://localhost:8080/
     
     
